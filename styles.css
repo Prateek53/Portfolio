@@ -28,11 +28,13 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .logo {
   width: 80px;
+  /* margin-bottom: 20%; */
 }
 
 .logo-container {
@@ -184,10 +186,10 @@ a {
   width: 20rem; /*(if we dont resize the image then its needed)*/
   z-index: -9;
 }
-
+/* 
 #charR {
   margin-left: -2rem;
-}
+} */
 
 @keyframes scaleImage {
   0% {
@@ -341,6 +343,7 @@ a {
   right: 0;
   bottom: 0;
   background: linear-gradient(45deg, #11999e, #11999ebe, #11999e7c);
+  backdrop-filter: blur(10px);
   transform: scaleX(0);
   transform-origin: left;
   transition: all 0.4s;
@@ -391,7 +394,7 @@ a {
 }
 
 .project-content-right {
-  right: 10%;
+  left: 33%;
 }
 
 .project-skills-container {
@@ -444,12 +447,12 @@ a {
 }
 
 #project1 {
-  background-image: url(images/project1.png);
+  background-image: url(images/project2.png);
 }
 
 #project2 {
   margin-left: 120px;
-  background-image: url(images/project2.png);
+  background-image: url(images/project1.png);
 }
 #project3 {
   background-image: url(images/project3.png);
@@ -544,14 +547,14 @@ a {
   font-size: 15em;
   font-style: bold;
   color: var(--bgColor);
-  bottom: -34.5%;
-  right: -25%;
+  bottom: -37%;
+  left: 60%;
   user-select: none;
   overflow-y: hidden;
 }
 
 .blob-style {
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   top: 50%;
   left: 50%;
